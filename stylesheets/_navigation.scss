@@ -1,0 +1,33 @@
+a.Navigation-link {
+  border-bottom: 1px dotted transparent;
+  color: white;
+}
+a.Navigation-link:hover,
+a.Navigation-link:focus,
+a.Navigation-link:active {
+  border-bottom-color: #ffffff;
+  text-decoration: none;
+}
+.Header .Navigation {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.Header .Navigation-item {
+  float: right;
+  margin-left: 40px;
+  line-height: 30px;
+  white-space: nowrap;
+}
+.Footer .Navigation {
+    margin-bottom: 6px;
+}
+.Footer .Navigation-item {
+  margin: 0 5px;
+  font-size: 14px;
+}
+.Footer .Navigation.Navigation--small {
+  font-size: 12px;
+  margin-top: 10px;
+  margin-bottom: 0;
+}

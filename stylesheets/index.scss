@@ -1,0 +1,163 @@
+---
+---
+
+// @custom-media --sm-viewport (max-width:640px);
+// @custom-media --md-viewport (min-width:640px) and (max-width:960px);
+// @custom-media --lg-viewport (min-width:960px);
+//
+
+$break-small: 640px;
+$break-large: 960px;
+
+
+@import 'suitcss';
+
+@import 'bubble';
+@import 'button';
+@import 'footer';
+@import 'header';
+@import 'hello';
+@import 'highlight';
+@import 'icon';
+@import 'navigation';
+@import 'pricing';
+@import 'quote';
+@import 'reference';
+
+// :root {
+//   --base-link-color: #ff4981;
+//   --base-font: 300 18px sans-serif;
+//   --base-color: #454545;
+//   --Grid-gutter-size: 40px;
+// }
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html {
+  font: 300 18px sans-serif;
+  color: #454545;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: disc;
+}
+ul > li {
+  margin-left: 20px;
+}
+ul > li:not(:last-child) {
+  margin-bottom: 20px;
+}
+p {
+  margin-bottom: 40px;
+}
+
+.Body--gray {
+  background-color: #f2f2f2;
+}
+
+.Content {
+  max-width: 960px;
+  padding: 40px 20px;
+  margin: auto;
+}
+@media(min-width: $break-large) {
+  .Content {
+    padding: 60px 30px;
+  }
+}
+.Content--bottom {
+  padding-bottom: 0;
+}
+.Content--hello {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.Content--full {
+  max-width: none;
+}
+
+.Screenshot {
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+}
+
+.FlexEmber-ratio--widget {
+  padding-bottom: 46%;
+}
+:lang(en) .Screenshot--widget {
+  background-image: url("/images/widget-en.png");
+}
+:lang(cs) .Screenshot--widget {
+  background-image: url("/images/widget-cs.png");
+}
+
+.FlexEmber-ratio--dashboard {
+  padding-bottom: 58%;
+}
+.Screenshot--dashboard {
+  background-image: url("/images/dashboard.png");
+}
+
+.Title {
+  font-size: 32px;
+  margin-bottom: 40px;
+}
+.Title-withoutSpace {
+  margin-bottom: 0;
+}
+
+.Introduction {
+  font-size: 22px;
+  margin: 0 auto 40px auto;
+  max-width: 600px;
+}
+
+.Note {
+  opacity: 0.8;
+  font-size: 18px;
+  margin: 20px 0 0 0;
+}
+
+.Attention {
+    display: inline-block;
+    margin-left: 40px;
+}
+.Attention > span {
+  background-color: #FFCC00;
+  border: 2px dashed;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  transform: rotate(-10deg);
+}
+@media(max-width: $break-small) {
+  .Attention {
+    display: block;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.ProductHunt {
+  font-weight: 700;
+  color: #da552f;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}

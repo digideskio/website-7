@@ -1,0 +1,31 @@
+.Reference {
+  display: inline-block;
+  margin: 20px;
+  margin-bottom: 10px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Reference--mention {
+  background-image: url("/images/logo-mention.svg"); /* 164 x 34 */
+  width: 242px;
+}
+
+.Reference--mailjet {
+  background-image: url("/images/mailjet-logo-black.png"); /* 3616 × 1271 */
+  width: 143px;
+  margin-bottom: 12px;
+}
+
+.Reference--dashlane {
+  background-image: url("/images/logo_dashlane.png"); /* 786 × 231 */
+  width: 171px;
+  margin-bottom: 21px;
+}
+
+.Reference--noodle {
+  background-image: url("/images/noodle_logo.png"); /* 1050 × 324 */
+  width: 163px;
+  margin-bottom: 18px;
+}

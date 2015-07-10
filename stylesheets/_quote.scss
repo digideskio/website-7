@@ -1,0 +1,38 @@
+.Quote {
+  max-width: 400px;
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+}
+
+.Quote-text {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.Quote-picture {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background-size: 94px;
+  border-radius: 50%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+.Quote-picture-guillaume {
+  background-image: url("/images/guillaume.jpg");
+}
+
+.Quote-picture-sujan {
+  background-image: url("/images/sujan.jpg");
+}
+
+.Quote-picture-rene {
+  background-image: url("/images/rene.png");
+}
+
+.Quote a {
+  color: #454545;
+  text-decoration: underline;
+}

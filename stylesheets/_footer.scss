@@ -1,0 +1,17 @@
+.Footer {
+  background-color: #333;
+  color: #ccc;
+  padding: 16px 10px;
+  font-size: 12px;
+}
+.Footer a {
+  color: #ccc;
+  border-bottom: 1px dotted transparent;
+}
+.Footer a:active,
+.Footer a:focus,
+.Footer a:hover {
+  color: white;
+  border-bottom-color: white;
+  text-decoration: none;
+}

@@ -1,0 +1,93 @@
+/* =============================================================================
+== OVAL SPEECH BUBBLE WITH QUOTATION MARKS (more CSS3)
+** ========================================================================== */
+
+.Bubble {
+  position: relative;
+  width: 280px;
+  height: 200px;
+  margin: 20px auto 80px;
+  border-radius: 280px / 200px;
+  vertical-align: top;
+}
+
+.Bubble p {
+  width: 250px;
+  height: 250px;
+  padding: 50px 0 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* creates smaller curve */
+.Bubble p:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: -31px;
+  width: 100px; /* wider than necessary to make it look a bit better in IE8 */
+  height: 81px;
+  background: #fff; /* need this for webkit - bug in handling of border-radius */
+  /* css3 */
+}
+
+/* creates larger curve */
+.Bubble p:after {
+  content: "";
+  position: absolute;
+  z-index: -2;
+  bottom: -30px;
+  height: 80px;
+  /* css3 */
+  /* using translate to avoid undesired appearance in CSS2.1-capabable but CSS3-incapable browsers */
+  transform: translate(0, -2px);
+  /* reduce the damage in FF3.0 */
+  display: block;
+  width: 0;
+}
+
+.Bubble {
+  background: #ff4981;
+  color: white;
+}
+.Bubble p:after {
+  border-right-color: #ff4981;
+  background: #ff4981;
+}
+.Bubble--light {
+  background: #f2f2f2;
+  color: #454545;
+}
+.Body--gray .Bubble--light {
+  background: white;
+}
+.Bubble--light p:after {
+  border-right-color: #f2f2f2;
+  background: #f2f2f2;
+}
+.Body--gray .Bubble--light p:after {
+  border-right-color: white;
+  background: white;
+}
+
+.Bubble--left p:before {
+  right: 55%;
+  border-bottom-right-radius: 40px 50px;
+  transform: translate(-30px, -2px);
+}
+.Bubble--left p:after {
+  right: 25%;
+  border-right: 200px solid transparent;
+  border-bottom-right-radius: 200px 100px;
+}
+.Bubble--right p:before {
+  left: 55%;
+  border-bottom-left-radius: 40px 50px;
+  transform: translate(30px, -2px);
+}
+.Bubble--right p:after {
+  left: 25%;
+  border-left: 200px solid transparent;
+  border-bottom-left-radius: 200px 100px;
+}
